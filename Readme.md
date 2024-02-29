@@ -2,9 +2,9 @@
 
 A sddm login screen inspired by 1998 anime [Serial Experiments Lain](https://en.wikipedia.org/wiki/Serial_Experiments_Lain).
 
-**Note:
-This is a fork.
-Original version can be found from [mixedCase](https://gitlab.com/mixedCase/sddm-lain-wired-theme) and [lll2yu](`https://github.com/lll2yu/sddm-lain-wired-theme`).**
+**Note:**
+
+**This is a fork. Original version can be found from [mixedCase](https://gitlab.com/mixedCase/sddm-lain-wired-theme) and [lll2yu](https://github.com/lll2yu/sddm-lain-wired-theme).**
 
 ## Differences
 
