@@ -14,7 +14,7 @@ Rectangle {
         id: welcome
         source: "welcome.wav"
         audioOutput: AudioOutput {
-            volume: 0.5
+            volume: 0.6
         }
         Component.onCompleted: play()
     }
@@ -23,7 +23,7 @@ Rectangle {
         id: denied
         source: "denied.wav"
         audioOutput: AudioOutput {
-            volume: 0.5
+            volume: 1.0
         }
     }
 
