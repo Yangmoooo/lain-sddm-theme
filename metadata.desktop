@@ -11,3 +11,4 @@ Screenshot=screenshot.png
 MainScript=Main.qml
 Theme-Id=lain
 Theme-API=2.0
+QtVersion=6

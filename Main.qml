@@ -71,7 +71,7 @@ Rectangle {
             id: username
             Layout.alignment: Qt.AlignHCenter
             text: userModel.lastUser
-            palette.text: "#c1b492"
+            color: "#c1b492"
             font.family: "MonaspiceXe Nerd Font"
             font.pixelSize: 16
             horizontalAlignment: Qt.AlignHCenter 
@@ -81,13 +81,12 @@ Rectangle {
                 border.color: "#d2738a"
             }
             KeyNavigation.backtab: shutdownBtn; KeyNavigation.tab: password
-			Keys.onPressed: function(event) {
+            Keys.onPressed: function(event) {
                 if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-                    sddm.login(username.text, password.text, session.currentIndex)
+                    sddm.login(username.text, password.text, session.index)
                     event.accepted = true
                 }
             }
-
         }
 
         Label {
@@ -101,7 +100,7 @@ Rectangle {
             id: password
             Layout.alignment: Qt.AlignHCenter
             echoMode: TextInput.Password
-            palette.text: "#c1b492"
+            color: "#c1b492"
             font.family: "MonaspiceXe Nerd Font"
             font.pixelSize: 16
             horizontalAlignment: Qt.AlignHCenter 
@@ -111,12 +110,12 @@ Rectangle {
                 border.color: "#d2738a"
             }
             KeyNavigation.backtab: username; KeyNavigation.tab: session
-			Keys.onPressed: function(event) {
-				if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-					sddm.login(username.text, password.text, session.currentIndex)
-					event.accepted = true
-				}
-			}
+            Keys.onPressed: function(event) {
+                if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                    sddm.login(username.text, password.text, session.index)
+                    event.accepted = true
+                }
+            }
         }
 
         Item {
@@ -140,7 +139,7 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: sddm.login(username.text, password.text, session.currentIndex)
+                onClicked: sddm.login(username.text, password.text, session.index)
             }
         }
 
@@ -202,7 +201,7 @@ Rectangle {
     ComboBox {
 		id: session
 		height: 30
-		width: 200
+		width: 180
 		x: 20
 		y: 40
 		model: sessionModel
@@ -212,7 +211,7 @@ Rectangle {
 		focusColor: "#d2738a"
 		hoverColor: "#d2738a"
 		textColor: "#c1b492"
-		arrowIcon: "/usr/share/sddm/themes/sddm-lain-wired-theme/angle-down.png"
+		arrowIcon: "/usr/share/sddm/themes/lain-sddm-theme/angle-down.png"
 		KeyNavigation.backtab: password; KeyNavigation.tab: rebootBtn;
 	}
 
