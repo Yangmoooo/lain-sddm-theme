@@ -72,7 +72,7 @@ Rectangle {
             Layout.alignment: Qt.AlignHCenter
             text: userModel.lastUser
             color: "#c1b492"
-            font.family: "MonaspiceXe Nerd Font"
+            font.family: "IntoneMono Nerd Font"
             font.pixelSize: 16
             horizontalAlignment: Qt.AlignHCenter 
             background: Rectangle {
@@ -101,7 +101,7 @@ Rectangle {
             Layout.alignment: Qt.AlignHCenter
             echoMode: TextInput.Password
             color: "#c1b492"
-            font.family: "MonaspiceXe Nerd Font"
+            font.family: "IntoneMono Nerd Font"
             font.pixelSize: 16
             horizontalAlignment: Qt.AlignHCenter 
             background: Rectangle {
