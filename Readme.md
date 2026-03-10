@@ -8,28 +8,28 @@ A sddm login screen inspired by 1998 anime [Serial Experiments Lain](https://en.
 
 ## Differences
 
-与 lll2yu 的版本差别不大，主要有：
+Compared to lll2yu's version, the main changes are:
 
-* 重写了部分 Main.qml 以支持 qt6
-* 删去了原本的背景音
-* 减短了 welcome.wav 的前摇
-* 将原本未统一的“User ID”更换为相同的字形
+* Rewrote parts of `Main.qml` to support Qt6
+* Removed the original background music
+* Shortened the intro of `welcome.wav`
+* Unified the "User ID" character glyphs to a consistent full-width format
 
-可以在 [这里](https://youtu.be/M-p7cHx4OM0) 查看大致的动态效果。
+You can see a rough preview of the animation [here](https://youtu.be/M-p7cHx4OM0).
 
-此前我并没有接触过 qt，对于修改的内容可能存在不当和错误，请见谅。
+I had no prior experience with Qt before this, so there may be mistakes or improper usages in the changes — apologies in advance.
 
 ## Installation
 
-可以参考原仓库的步骤，或进行如下操作：
+You can follow the steps from the original repository, or do the following:
 
-1. 确保 SDDM 已经安装和配置好，使用的是 qt6 框架并安装了相应的依赖
-2. 将仓库内的所有文件置于 `/usr/share/sddm/themes/lain-sddm-theme/` 下
-3. 使用 `sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/lain-sddm-theme` 进行测试
+1. Make sure SDDM is installed and configured to use the Qt6 framework with all required dependencies
+2. Place all files in this repository under `/usr/share/sddm/themes/lain-sddm-theme/`
+3. Test with: `sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/lain-sddm-theme`
 
 ## Usage
 
-在 SDDM 的配置文件（如 `/etc/sddm.conf.d/kde_settings.conf`）中修改当前主题即可：
+Edit the SDDM configuration file (e.g. `/etc/sddm.conf.d/kde_settings.conf`) and set the current theme:
 
 ```shell
 [Theme]
