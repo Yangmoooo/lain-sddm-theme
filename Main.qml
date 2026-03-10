@@ -211,7 +211,7 @@ Rectangle {
 		focusColor: "#d2738a"
 		hoverColor: "#d2738a"
 		textColor: "#c1b492"
-		arrowIcon: "/usr/share/sddm/themes/lain-sddm-theme/angle-down.png"
+		arrowIcon: "angle-down.png"
 		KeyNavigation.backtab: password; KeyNavigation.tab: rebootBtn;
 	}
 
