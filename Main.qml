@@ -1,6 +1,6 @@
 import QtQuick 6.0
 import QtQuick.Controls 6.0
-import QtQuick.Layouts 1.12
+import QtQuick.Layouts 1.15
 import QtQuick.Window 6.0
 import QtMultimedia 6.0
 import SddmComponents 2.0
